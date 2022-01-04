@@ -1,0 +1,72 @@
+@use "../abstracts/" as *;
+
+@keyframes heading1 {
+    0%{
+        transform:translateX(-90rem);
+        opacity: 0;
+    }
+    50%{
+        transform:translateX(-2rem);
+    }
+    100%{
+        transform:translate(0,0);
+        opacity:1;
+    }
+}
+
+@keyframes nav {
+    0%{
+        transform:translateY(-50rem);
+        opacity:0;
+    }
+    50%{
+        transform:translateY(-2rem);
+    }
+    100%{
+        tranfrom:translateY(0);
+        opacity:1;
+    }
+}
+
+@keyframes cta {
+    0%{
+        opacity:0;
+        transform:translateX(1000rem)
+    }
+    50%{
+        transform:translateX(4rem);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes left-testimonial {
+    0%{
+        opacity:0;
+        transform:translateX(-1000rem)
+    }
+    50%{
+        transform:translateX(-4rem);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes right-testimonial {
+    0%{
+        opacity:0;
+        transform:translateX(1000rem)
+    }
+    50%{
+        transform:translateX(4rem);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+

@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+
+.hero{
+    padding:5rem;
+    background-image: linear-gradient(to right, rgba($color-grey-dark-1,.8),rgba($color-grey-dark,.8)),
+    url('../img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color:#fbebf0;
+    &__text{
+        font-size: 2rem;
+        width: 50%;
+        margin-top: 7rem;
+        margin-bottom: 4rem;
+        @media only screen and (max-width:$bp-small){
+            font-size: 1.4rem;
+        }
+    }
+    &__cta{
+        border:none;
+        padding:1.5rem 2rem;
+        background-color: $color-primary;
+        color:#fff;
+        font-size: 1.7rem;
+        cursor:pointer;
+        transition:all 900ms;
+        animation: cta 1200ms ease-in-out;
+    }
+}

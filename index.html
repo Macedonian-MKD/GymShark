@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <script src="js/script.js" type="text/javascript" defer></script>
+    <title>Gymshark</title>
+</head>
+<body>
+    <div class="backdrop"></div>
+    <div class="modal">
+        <i class="far fa-times-circle modal__close-button"></i>
+        <form action="#" class="modal__form">
+            <input type="text" required placeholder="Name">
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <select name="country" id="country">
+                <option value="Alabama">Alabama</option>
+                <option value="Arizona">Arizona</option>
+                <option value="California">California</option>
+                <option value="Delawere">Delawere</option>
+                <option value="Florida">Florida</option>
+                <option value="Georgia">Georgia</option>
+                <option value="New York">New York</option>
+                <option value="Tennesee">Tennesee</option>
+            </select>
+            <button class="contact__submit">Beast mode on</button>
+        </form>
+    </div>
+    <div class="mobile-nav">
+        <i class="far fa-times-circle close-mobile-nav"></i>
+        <ul class="mobile-nav__list">
+            <li class="mobile-nav__list-item"><a href="#features" class="mobile-nav__list-link">Features</a></li>
+            <li class="mobile-nav__list-item"><a href="#testimonials" class="mobile-nav__list-link">Testimonials</a></li>
+            <li class="mobile-nav__list-item"><a href="#specials" class="mobile-nav__list-link">Specials</a></li>
+            <li class="mobile-nav__list-item"><a href="#gallery" class="mobile-nav__list-link">Gallery</a></li>
+            <li class="mobile-nav__list-item"><a href="#contact" class="mobile-nav__list-link">Contact</a></li>
+            <li class="mobile-nav__list-item"><a href="#contact" class="mobile-nav__list-link cta">Start building now</a></li>
+        </ul>
+    </div>
+    <header class="header">
+        <a href="#">
+            <img src="img/logo.png" alt="Gymshark logo" class="header__logo">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__list-item"><a href="#features" class="header__list-link">Features</a></li>
+                <li class="header__list-item"><a href="#testimonials" class="header__list-link">Testimonials</a></li>
+                <li class="header__list-item"><a href="#specials" class="header__list-link">Specials</a></li>
+                <li class="header__list-item"><a href="#gallery" class="header__list-link">Gallery</a></li>
+                <li class="header__list-item"><a href="#contact" class="header__list-link">Contact</a></li>
+                <li class="header__list-item"><a href="#contact" class="header__list-link header__list-link--cta">Start building now</a></li>
+            </ul>
+        </nav>
+        <button class="header__mobile-button"><i class="fas fa-bars"></i></button>
+    </header>
+    
+        <section class="hero">
+            <h1 class="heading-primary">
+                The best gym in the United States
+            </h1>
+            <p class="hero__text">We are glad to see you on our page. You can see our gallery and you can also se our special offers.
+                Only sky is the limit!
+            </p>
+            <button class="hero__cta header__list-link--cta">Start building now!</button>
+        </section>
+        <main>
+        <section class="features" id="#features">
+            <div class="features__container">
+                <div class="features__item">
+                    <i class="fas fa-male features__icon"></i>
+                    <h3 class="features__heading">Personal trainer</h3>
+                    <p class="features__text">Get your free support and reach your goals with our professional Persional Trainer!</p>
+                </div>
+                <div class="features__item">
+                    <i class="fas fa-parking features__icon"></i>
+                    <h3 class="features__heading">Free Parking</h3>
+                    <p class="features__text">No more parking problems, get your free parking spot!</p>
+                </div>
+                <div class="features__item">
+                    <i class="fas fa-swimming-pool features__icon"></i>
+                    <h3 class="features__heading">Free Swimming Pool</h3>
+                    <p class="features__text">Enjoy our indoor swimming pool as a cardio after your training!</p>
+                </div>
+                <div class="features__item">
+                    <i class="far fa-clock features__icon"></i>
+                    <h3 class="features__heading">Open 24/7</h3>
+                    <p class="features__text">No more excuses ! We are working now Non-stop!</p>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials" id="testimonials">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                  <source src="img/video.mp4" type="video/mp4">
+                  Your Browser does not support video.
+                </video>
+              </div>
+            <div class="testimonials__container">
+                <div class="testimonials__testimonial testimonial1">
+                    <figure>
+                    <img src="img/user-1.jpg" alt="User 1" class="testimonials__image">
+                    <figcaption>Mc`Mannaman</figcaption>
+                </figure>
+                    <p class="testimonials__text">
+                        &ldquo;
+                        If you believe in miralces like me, they will happen! I'm very satisfated with my results and with the help of proffesional fitness instructors that GymSharks provided to me.&rdquo;
+                        <span>&mdash; Jim Mc`Mannaman</span>
+                    </p>
+                </div>
+                <div class="testimonials__testimonial testimonial2">
+                    <figure>
+                    <img src="img/user-2.jpg" alt="User 2" class="testimonials__image">
+                    <figcaption>Smith</figcaption>
+                </figure>
+                    <p class="testimonials__text">
+                        &ldquo;
+                        I was very depressed but the motiavtion from the Motivation videos provided from the GymShark team helped me a lot. You should defenitly try out the utilities in the gym. Thank me later!&rdquo;
+                        <span>&mdash; Caroline Smith</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="specials" id="specials">
+            <div class="specials__container">
+                <div class="specials__special">
+                    <h3 class="specials__heading">Basic</h3>
+                    <p class="specials__price">$249 <span>/year </span> </p>
+                    <ul class="specials__list">
+                        <li class="specials__list-item"><i class="fas fa-check-circle"></i>Free bottles of water</li>
+                        <li class="specials__list-item"><i class="fas fa-times-circle"></i>Limited trainings per week</li>
+                        <li class="specials__list-item"><i class="fas fa-times-circle"></i>No free protein shakes</li>
+                        <li class="specials__list-item"><i class="fas fa-times-circle"></i>No personal trainer</li>
+                    </ul>
+                    <button class="specials__button">Start now</button>
+                </div>
+                <div class="specials__special best">
+                    <span class="best-offer">best offer</span>
+                    <h3 class="specials__heading">Premium</h3>
+                    <p class="specials__price">$339 <span> /year</span></p>
+                    <ul class="specials__list">
+                        <li class="specials__list-item"><i class="fas fa-check-circle"></i>Free bottles of water</li>
+                        <li class="specials__list-item"><i class="fas fa-check-circle"></i>Unlimited trainings per week</li>
+                        <li class="specials__list-item"><i class="fas fa-check-circle"></i>Free protein shakes</li>
+                        <li class="specials__list-item"><i class="fas fa-check-circle"></i>Personal trainer</li>
+                    </ul>
+                    <button class="specials__button">Start now</button>
+                </div>
+                <div class="specials__special advanced">
+                    <h3 class="specials__heading">Advanced</h3>
+                    <p class="specials__price">$549 <span>/year</span></p>
+                    <ul class="specials__list">
+                        <li class="specials__list-item"><i class="fas fa-check-circle"></i>Free bottles of water</li>
+                        <li class="specials__list-item"><i class="fas fa-check-circle"></i>Unimited trainings per week</li>
+                        <li class="specials__list-item"><i class="fas fa-check-circle"></i>Free protein shakes</li>
+                        <li class="specials__list-item"><i class="fas fa-check-circle"></i>Personal trainer</li>
+                        <li class="specials__list-item"><i class="fas fa-check-circle"></i>Free meal plan</li>
+                    </ul>
+                    <button class="specials__button">Start now</button>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="gallery">
+            <figure class="gallery__item gallery__item--1"><img src="img/gal-1.jpg" alt="Image 1" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--2"><img src="img/gal-2.jpg" alt="Image 2" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--3"><img src="img/gal-3.jpg" alt="Image 3" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--4"><img src="img/gal-4.jpg" alt="Image 4" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--5"><img src="img/gal-5.jpg" alt="Image 5" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--6"><img src="img/gal-6.jpg" alt="Image 6" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--7"><img src="img/gal-7.jpg" alt="Image 7" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--8"><img src="img/gal-8.jpg" alt="Image 8" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--9"><img src="img/gal-9.jpg" alt="Image 9" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--10"><img src="img/gal-10.jpg" alt="Image 10" class="gallery__img"></figure>
+        </section>
+        <section class="contact" id="contact">
+            <h2>Start changing now</h2>
+            <div class="contact__container">
+                <form action="#" class="contact__form">
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <select name="country" id="country">
+                        <option value="" disabled selected>-- Select State --</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="California">California</option>
+                        <option value="Delawere">Delawere</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="New York">New York</option>
+                        <option value="Tennesee">Tennesee</option>
+                    </select>
+                    <button class="contact__submit">Beast mode on</button>
+                </form>
+                <img src="img/contact.jpg" alt="Man working out" class="contact__image">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <img src="img/favicon.png" alt="Icon" class="footer__image">
+        <p>123 Main Street, San-Diego, California, USA</p>
+        <p>All rights reserved &copy;</p>
+    </footer>
+</body>
+</html>

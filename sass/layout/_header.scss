@@ -1,0 +1,190 @@
+@use "../abstracts/" as *;
+@use "../base/" as *;
+@use "../components/" as *;
+
+.header{
+    display: flex;
+    padding:4rem;
+    height: 9rem;
+    &__logo{
+        height: 3rem;
+    }
+    &__nav{
+        margin-left: auto;
+        transition:all 350ms;
+        animation: nav 780ms ease-out 200ms;
+        @media only screen and (max-width:$bp-large){
+            display: none;
+        }
+    }
+    &__mobile-button{
+        display: none;
+        background-color: transparent;
+        font-size: 3.3rem;
+        margin-left: auto;
+        color:$color-primary;
+        cursor: pointer;
+        border:none;
+        @media only screen and (max-width:$bp-large){
+            display: block;
+        }
+    }
+    &__list{
+        display: flex;
+        gap:5rem;
+        list-style: none;
+    }
+    &__list-link:link, &__list-link:visited{
+        text-decoration: none;
+        color:$color-grey-dark;
+        font-size: 1.7rem;
+        transition:all 250ms;
+    }
+    &__list-link:hover, &__list-link:active{
+        color:$color-primary-dark
+    }
+    &__list-link--cta:link, &__list-link--cta:visited{
+        text-decoration: none;
+        padding:1rem 2rem;
+        background-color: $color-primary;
+        color:#fff;
+    }
+    &__list-link--cta:hover, &__list-link--cta:active{
+        background-color: $color-primary-dark;
+    }
+}
+
+.backdrop{
+    position: fixed;
+    top:0;left:0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.52);
+    z-index: 990;
+    backdrop-filter: blur(2px);
+    visibility: hidden;
+    opacity:0;
+}
+
+.modal{
+    position: fixed;
+    top:50%; left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    background-color: #333;
+    padding:2rem;
+    border:4px solid $color-primary;
+    box-shadow: 0px 5px 24px rgba(0,0,0,.32);
+    transition:all 350ms;
+    opacity:0;
+    visibility: hidden;
+    &__close-button{
+        position: absolute;
+        right:2%;
+        top:1%;
+        font-size: 1.8rem;
+        cursor:pointer;
+        &:hover{
+            color:$color-primary;
+        }
+        &:active{
+            transform:translateY(3px);
+        }
+    }
+    &__form{
+        padding:2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:5rem;
+        input,select{
+            width: 90%;
+            padding:1rem;
+            color:$color-grey-dark;
+            font-size: 1.8rem;
+            font-family: inherit;
+            border:none;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.116);
+            &:focus{
+                outline: none;
+                box-shadow: 0 1rem 2rem rgba($color-primary, .1);
+                border-bottom: 5px solid seagreen;
+            }
+            &:focus:invalid{ // PROVERKA NA EMAIL ADRESA i NAME INPUT
+                border-bottom: 5px solid crimson;
+            }
+        }
+        input::placeholder{
+            color:#aaa;
+        }
+        button{
+            padding:2rem 3rem;
+            background-color: $color-primary;
+            color:white;
+            border:none;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:hover{
+                background-color: $color-primary-dark;
+            }
+}
+}
+}
+
+
+.mobile-nav{
+   z-index: 1000;
+    position: fixed;
+    top:0; left:0;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 400ms;
+    opacity:0;
+    visibility: hidden;
+    .close-mobile-nav{
+        font-size: 4.5rem;
+        color:$color-primary;
+        position: absolute;
+        top:5%;
+        right:5%;
+        cursor: pointer;
+        &:hover{
+            color:$color-primary-dark;
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap:5rem;
+    }
+
+    &__list-link{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 2rem;
+        color:$color-grey-dark;
+        transition:all 400ms;
+        &:hover{
+            color:$color-grey-dark-1;
+        }
+    }
+
+    .cta{
+        color:$color-primary;
+        font-weight: bold;
+        &:hover{
+            color:$color-primary-light  
+        }
+    }
+}
+
+
+.open{
+    visibility: visible;
+    opacity: 1;
+}
